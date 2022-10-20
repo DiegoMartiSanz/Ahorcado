@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="./css/plantilla.css">
+
+  <script src="js/funciones.js" defer></script>
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+
+      
+        <picture style="margin: 5px;">
+          <source media="(min-width: 500px)" srcset="imagenes/LogoPlantilla.png">
+          <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
+        </picture>
+        <h1 id="titulo">Juego del Ahorcado
+      
+    </header>
+    <nav id="menu">
+      <input type="checkbox" id="menuopciones">
+      <label for="menuopciones"> ☰ </label>    
+      <ul>
+        <li>Principal</li>
+        <li>Fotos</li>
+        <li>Videos</li>
+        <li>Contacto</li>
+      </ul>
+
+    </nav>
+    <section id="seccion">
+      <article>
+        <header>
+          <hgroup>
+            <h1>Jugando .......</h1>
+            
+          </hgroup>
+          <time datetime="2022-10-04" pubdate> 
+          </time>
+        </header>
+        <p>Introduce la plabra a adivinar</p>
+        <input type="password" id="palabra"/><br>
+      </br>
+        <p>Caracter</p>
+        <input type="text" id="caracter" maxlength="1"></input>
+      </br>
+        <p>Aciertos</p>
+        <input type="text" id="aciertos" disabled></input><!--disable para que la persona no pueda cambiar nada de este input-->
+         
+        <footer>
+          <p id="fallos">Fallos : </p>
+        </footer>
+      </article>
+       
+    </section>
+    <aside id="columna">
+      
+    </aside>
+    <footer id="pie">
+      Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
+    </footer>
+  </div>
+</body>
+
+</html>
